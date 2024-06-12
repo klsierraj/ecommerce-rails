@@ -1,7 +1,9 @@
-<% @products.each do |product| %>
-  <div class="product">
-    <h2><%= product.title %></h2>
-    <p><%= product.description %></p>
-    <p>Precio: $<%= product.price %></p>
-  </div>
-<% end %>
+  <h1>List of products</h1>
+  <% @products.each do |product| %>
+    <div class="product">
+      <h2><%= product.title %></h2>
+      <p><%= product.description %></p>
+      <p>Precio: $<%= product.price %></p>
+      <p><%= link_to 'View details', product_path(product.id)%></p>
+    </div>
+  <% end %>

@@ -1,0 +1,18 @@
+<h2>Add product</h2>
+
+<%= form_with model: @product do |form| %>
+<%@product.errors.full_messages.each do |error|%>
+    <%= error %>
+<% end %>
+<%= form.label :title %>
+<%= form.text_field :title %>
+
+<%= form.label :description %>
+<%= form.text_area :description %>
+
+<%= form.label :price %>
+<%= form.number_field :price %>
+
+<%= form.submit %>
+
+<% end %>

@@ -1,13 +1,9 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+ps5:
+  title: PS5
+  description: description ps5
+  price: 1000
 
-one:
-  title: MyString
-  string: MyString
-  description: MyText
-  price: 1
-
-two:
-  title: MyString
-  string: MyString
-  description: MyText
-  price: 1
+iphone:
+  title: Iphone
+  description: Iphone 15 pro max
+  price: 1100
